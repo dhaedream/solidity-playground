@@ -6,10 +6,12 @@ contract StateVariables {
     //stored on blockchain
     uint public myUint;
     myUint = 123;
+    bool myState = true;
 
     function localVar() external {
         // local  variable only exist inside function
         // only exist when function is executed
         uint notStateVariable = 456;
+        myState = false;
     }
 }

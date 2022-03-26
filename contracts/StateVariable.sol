@@ -14,4 +14,7 @@ contract StateVariables {
         uint notStateVariable = 456;
         myState = false;
     }
+
+    // When function is called, local vars may update state vars
+    // after function i executed, local vars data is lost
 }
